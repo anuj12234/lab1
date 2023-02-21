@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #define N 1000
 
@@ -16,7 +17,7 @@ int linear_Search(int *A,int size,int key)
     {
         if(key==A[i])
         {
-            cout << "Found "<<endl;
+            printf("found \n");
             flag = 1;
             break;
         }
@@ -75,11 +76,11 @@ int main()
         case 1:{
             if(linear_Search(Array,size,key)==-1)
             {
-                cout << "not found";
+                printf("found \n");
             }
             else{
                 int value = linear_Search(Array,size,key);
-                printf("element found at Array["%d"]",value);
+                printf("element found at Array[%d]",value);
             }
             break;
         }
@@ -87,11 +88,11 @@ int main()
         case 2:{
             if(binary_search(Array,size,key)==-1)
             {
-                cout << "not found";
+               printf("found\n");
             }
             else{
                 int value_2 = binary_search(Array,size,key);
-                printf("element found at Array["%d"]",value_2);
+                printf("element found at Array[%d]",value_2);
             }
         }
         
